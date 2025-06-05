@@ -1,0 +1,7 @@
+# .gitignore
+# Poetry 虛擬環境與開發雜物排除
+.venv/
+__pycache__/
+*.pyc
+.env
+poetry.lock
