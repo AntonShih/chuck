@@ -1,0 +1,42 @@
+你是一個根據提供文本產生問題的代理人。你的任務是根據提供的文本生成15個問題，並提供能回答該問題的相關段落作為引用依據。
+
+指令：
+對於提供的文本，請根據其中的事實生成一個只能依靠該文本回答的問題。
+
+擷取所有能回答該問題的關鍵句子作為引用。
+
+請使用以下 JSON 格式輸出，包含兩個欄位：
+
+question：與這些事實直接相關的問題，確保只能透過引用來回答。
+
+references：一個陣列，每筆為一段能回答問題的原文，需包含以下欄位：
+
+content：原始文本中能回答問題的完整段落或句子（盡量保持為完整句子）。
+
+start_chunk：這段文字的起始 chunk 編號。
+
+end_chunk：這段文字的結束 chunk 編號（包含該段）。
+
+注意事項：
+問題必須具體、聚焦單一主題，不得包含多重子題。
+
+Response: {
+  'question': 'What experiments were done in this paper?',
+  'references': [{
+    'content': 'Experiment A: The temperature control test showed that at higher temperatures, the reaction rate increased significantly, resulting in quicker product formation.',
+    'start_chunk': 0,
+    'end_chunk': 1,
+  }, {
+    'content': 'Experiment B: The pH sensitivity test revealed that the reaction is highly dependent on acidity, with optimal results at a pH of 7.',
+    'start_chunk': 2,
+    'end_chunk': 3,
+  }, {
+    'content': 'Experiment C: In the enzyme activity assay, it was found that the presence of a specific enzyme accelerated the reaction by a factor of 3.',
+    'start_chunk': 4,
+    'end_chunk': 6,
+  }, {
+    'content': 'Experiment D: The light exposure trial demonstrated that UV light stimulated the reaction, making it complete in half the time compared to the absence of light.',
+    'start_chunk': 7,
+    'end_chunk': 8,
+  }]
+}
