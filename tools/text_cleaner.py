@@ -1,3 +1,4 @@
+# 可視化跟適合拿來扁平的檔案
 import re
 
 def strip_page_artifacts(text: str) -> str:

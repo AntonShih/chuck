@@ -1,0 +1,9 @@
+[NO_CLAUSE] 第一條 沒有條款
+[NO_CLAUSE] 第二條 沒有條款
+[DUPLICATE_CLAUSE] 第三條 條號有重複：['一', '二', '三', '一', '二', '三', '四', '五', '六']
+[NO_CLAUSE] 第十二條 沒有條款
+[NO_CLAUSE] 第十三條 沒有條款
+[NO_CLAUSE] 第十四條 沒有條款
+[NO_CLAUSE] 第十五條 沒有條款
+[NO_CLAUSE] 第十八條 沒有條款
+[NO_CLAUSE] 第十九條 沒有條款

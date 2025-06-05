@@ -1,3 +1,4 @@
+# 把pdf變成txt但格式會照pdf走
 import fitz  # PyMuPDF
 
 def extract_text_from_pdf(pdf_path: str) -> str:
@@ -14,7 +15,7 @@ def save_text_to_file(text: str, output_path: str):
         f.write(text)
 
 if __name__ == "__main__":
-    raw_text = extract_text_from_pdf("data/NTU_rule.pdf")
-    save_text_to_file(raw_text, "data/NTU_rule.txt")
+    raw_text = extract_text_from_pdf("data/Labor_Standards_Act7.pdf")
+    save_text_to_file(raw_text, "data/Labor_Standards_Act7.txt")
     print("✅ PDF 已轉為 NTU_rule.txt")
 
